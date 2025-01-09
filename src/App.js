@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header_Add from './Header/header.js';
 import Artical from './Artical/Artical';
-import Header_Add from './header';
 //import img from './public';
+import Footer from './footer/footer.js';
+
 function App() {
   return (
     <div className="App">
       <Header_Add></Header_Add>
-      <Artical> 
-      </Artical>
+      <Artical>Посмотри</Artical>
+      <Footer></Footer>
     </div>
   );
 }
