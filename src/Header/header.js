@@ -1,15 +1,15 @@
 import logo from '../logo.svg';
 
 
-function Header_Add()
+function Header_Add(props)
 {
-    let tuty = "Hello ReactJS"; 
-    let desc = "Welcome to";
+    //let tuty = "Hello ReactJS"; 
+    //let desc = "Welcome to";
     return (<header className="App-header">
     <img src={logo} className="App-logo" alt="logo" />
-    <h1> {tuty} </h1>
+    <h1> {props.title} </h1>
     <p>
-       {desc} <code>src/App.js</code> and id Home.
+       {props.discription} <code>src/App.js</code> and id Home.
     </p>
     <a
       className="App-link"
@@ -18,6 +18,7 @@ function Header_Add()
       rel="noopener noreferrer"
     >
       Terminator
+      // props - параметр передваемый в функцию
     </a>
   </header>
   )
