@@ -9,6 +9,8 @@ import Navig from '../Nav/nav.js';
 import data from '../Artical/db.json';
 import Factorial from '../Factor/factor.js';
 import Fibonachi from './Fibon/fibon.js';
+import Switch from '../switch/Switch.js';
+
 
 
 function App() {
@@ -27,11 +29,12 @@ function App() {
       <Header_Add title ="Hello ReactJS" discription ="This is my first React App. This phrase passed using parameters over 'PROPS'">
       </Header_Add>
       <Navig navigation={nav}></Navig>
+      <Switch> </Switch>
       <Power a={2} n={8}> </Power>
-      <Footer></Footer>
-      <Artical db={db}/>
       <Factorial a={6}></Factorial>
       <Fibonachi n={6}></Fibonachi>
+      <Artical db={db}/>
+      <Footer year="2025"></Footer>
     </div>
   );
 }
