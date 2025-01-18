@@ -29,6 +29,7 @@ function App() {
       <Navig navigation={nav}></Navig>
       <Power a={2} n={8}> </Power>
       <Footer></Footer>
+      <Artical db={db}/>
       <Factorial a={6}></Factorial>
       <Fibonachi n={6}></Fibonachi>
     </div>
